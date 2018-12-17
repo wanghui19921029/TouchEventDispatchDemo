@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wh.toucheventdispatchdemo.MainActivity">
+
+    <com.example.wh.toucheventdispatchdemo.BaseFrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="#55ff0000">
+
+    </com.example.wh.toucheventdispatchdemo.BaseFrameLayout>
+
+    <com.example.wh.toucheventdispatchdemo.BaseRelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="60dp"
+        android:background="#55ffff00">
+
+    </com.example.wh.toucheventdispatchdemo.BaseRelativeLayout>
+
+    <com.example.wh.toucheventdispatchdemo.BaseLinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="130dp"
+        android:background="#cccccc"
+        android:orientation="horizontal">
+
+        <com.example.wh.toucheventdispatchdemo.BaseTextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#8800ffff"
+            android:textSize="20sp"
+            android:text="BaseTextView" />
+
+        <com.example.wh.toucheventdispatchdemo.BaseImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+        <com.example.wh.toucheventdispatchdemo.BaseButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BaseButton"
+            android:textAllCaps="false" />
+
+    </com.example.wh.toucheventdispatchdemo.BaseLinearLayout>
+</merge>
