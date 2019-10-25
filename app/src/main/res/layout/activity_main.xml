@@ -6,28 +6,27 @@
     tools:context="com.example.wh.toucheventdispatchdemo.MainActivity">
 
     <com.example.wh.toucheventdispatchdemo.BaseFrameLayout
-        android:id="@+id/fl"
+        android:id="@+id/framelayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="10dp"
         android:background="#55ff0000">
 
     </com.example.wh.toucheventdispatchdemo.BaseFrameLayout>
 
     <com.example.wh.toucheventdispatchdemo.BaseRelativeLayout
-        android:id="@+id/rl"
+        android:id="@+id/relativelayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="60dp"
+        android:layout_margin="80dp"
         android:background="#55ffff00">
 
     </com.example.wh.toucheventdispatchdemo.BaseRelativeLayout>
 
     <com.example.wh.toucheventdispatchdemo.BaseLinearLayout
-        android:id="@+id/ll"
+        android:id="@+id/linearlayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="130dp"
+        android:layout_margin="160dp"
         android:background="#cccccc"
         android:orientation="horizontal">
 
@@ -36,10 +35,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#8800ffff"
-            android:textSize="20sp"
-            android:text="BaseTextView" />
+            android:text="BaseTextView"
+            android:textSize="30sp" />
 
         <com.example.wh.toucheventdispatchdemo.BaseImageView
+            android:id="@+id/imageview"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="30dp"
@@ -48,10 +48,12 @@
             android:src="@mipmap/ic_launcher" />
 
         <com.example.wh.toucheventdispatchdemo.BaseButton
+            android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="BaseButton"
-            android:textAllCaps="false" />
+            android:textAllCaps="false"
+            android:textSize="30sp" />
 
     </com.example.wh.toucheventdispatchdemo.BaseLinearLayout>
 </merge>
